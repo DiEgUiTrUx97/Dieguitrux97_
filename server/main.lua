@@ -1,0 +1,5 @@
+RegisterServerEvent("ayuda")
+AddEventHandler("ayuda", function(param)
+    print("^3[AYUDA]:" .. param)
+    TriggerClientEvent("chatMessage", -1, "^3[AYUDA]", {0,0,0}, param)
+end)
